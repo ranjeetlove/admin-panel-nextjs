@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ /* Additional styles for the toggle button */
+ #toggle:checked + .left-panel {
+  transform: translateX(0);
+}
+#toggle:checked + .left-panel + .main-content {
+  margin-left: 0;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
